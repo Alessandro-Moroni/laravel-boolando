@@ -1,0 +1,38 @@
+header{
+    background-color: rgb(255, 105, 0);
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ul{
+        display: flex;
+        li{
+          padding: 10px;
+          list-style: none;
+          &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+            color: white;
+          }
+          a{
+            color: white;
+            text-decoration: none;
+
+          }
+        }
+      }
+    }
+  }
+
+  .logo{
+    width: 30%;
+    height: 30%;
+
+  }

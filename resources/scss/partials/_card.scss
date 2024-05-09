@@ -1,0 +1,53 @@
+.card{
+    width: calc(100% / 3);
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    .photo{
+      position: relative;
+      cursor: pointer;
+
+      .first-photo{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+
+      }
+      .second-photo{
+        width: 100%;
+        height: 100%;
+        display: none;
+
+      }
+      .heart{
+        position: absolute;
+        right: 0;
+        top: 10px;
+        padding: 10px 17px;
+        background-color: white;
+        font-size: 2rem;
+      }
+      .sold{
+        position: absolute;
+        bottom: 20px;
+        color: white;
+      }
+
+    }
+  }
+  .discount{
+    background-color: red;
+    padding: 7px 18px;
+
+  }
+  .tag{
+    background-color: green;
+    margin-right: 5px;
+  }
+
+  .photo:hover .first-photo{
+    display: none;
+  }
+  .photo:hover .second-photo{
+    display: inline-block;
+  }
