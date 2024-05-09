@@ -3,6 +3,7 @@
     padding: 5px;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    border: none;
     .photo{
       position: relative;
       cursor: pointer;
@@ -34,20 +35,21 @@
       }
 
     }
-  }
-  .discount{
-    background-color: red;
+}
+.discount{
+  background-color: red;
+  padding: 7px 18px;
+
+}
+.tag{
     padding: 7px 18px;
+  background-color: green;
+  margin-right: 5px;
+}
 
-  }
-  .tag{
-    background-color: green;
-    margin-right: 5px;
-  }
-
-  .photo:hover .first-photo{
-    display: none;
-  }
-  .photo:hover .second-photo{
-    display: inline-block;
-  }
+.photo:hover .first-photo{
+  display: none;
+}
+.photo:hover .second-photo{
+  display: inline-block;
+}

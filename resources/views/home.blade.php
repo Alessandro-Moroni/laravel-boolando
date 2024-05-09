@@ -2,65 +2,41 @@
 
 @section('content')
 
+@php
+    $card = config('card-array');
+@endphp
+
 <div class="container">
 
-    <div class="card">
-        <div class="photo">
-          <img class="first-photo" src="/img/1.webp" alt="">
-          <img class="second-photo" src="/img/1b.webp" alt="">
+    @foreach ($card['products'] as $product)
 
-            <div class="heart">&#9829;</div>
+        <div class="card">
+            <div class="photo">
+                <img class="first-photo" src="{{Vite::asset('public/img/').$product['frontImage']}}" alt="">
+                <img class="second-photo" src="{{Vite::asset('public/img/').$product['backImage']}}" alt="">
 
-          <div class="sold">
+                <div class="heart">&#9829;</div>
 
-            <span v-for="discount in finalProduct.badges" key="discount" class="discount.type" class="badge discount">discount.value </span>
+                <div class="sold">
+
+                    @foreach ($product['badges'] as $discount)
+
+                        <span  key="discount" class="{{$discount['type']}}">{{$discount['value']}}</span>
 
 
-          </div>
 
+                    @endforeach
+
+
+                </div>
+
+            </div>
+            <p>{{$product['brand']}}</p>
+            <h3>{{$product['name']}}</h3>
+            <p>{{$product['price']}}</p>
         </div>
-        <p>levis</p>
-        <h3>relax</h3>
-        <p>20 €</p>
-    </div>
-    <div class="card">
-        <div class="photo">
-          <img class="first-photo" src="/img/1.webp" alt="">
-          <img class="second-photo" src="/img/1b.webp" alt="">
 
-            <div class="heart">&#9829;</div>
-
-          <div class="sold">
-
-            <span v-for="discount in finalProduct.badges" key="discount" class="discount.type" class="badge discount">discount.value </span>
-
-
-          </div>
-
-        </div>
-        <p>levis</p>
-        <h3>relax</h3>
-        <p>20 €</p>
-    </div>
-    <div class="card">
-        <div class="photo">
-          <img class="first-photo" src="/img/1.webp" alt="">
-          <img class="second-photo" src="/img/1b.webp" alt="">
-
-            <div class="heart">&#9829;</div>
-
-          <div class="sold">
-
-            <span v-for="discount in finalProduct.badges" key="discount" class="discount.type" class="badge discount">discount.value </span>
-
-
-          </div>
-
-        </div>
-        <p>levis</p>
-        <h3>relax</h3>
-        <p>20 €</p>
-    </div>
+    @endforeach
 
 </div>
 

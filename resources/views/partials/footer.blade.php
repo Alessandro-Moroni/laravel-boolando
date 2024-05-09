@@ -17,7 +17,31 @@
           <p>
             <nav>
               <ul>
-                <li v-for="(item, index) in mainSocial" :key="`s-${index}`"><a href="item.href" v-html="`${item.text}`"></a></li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
               </ul>
             </nav>
           </p>
