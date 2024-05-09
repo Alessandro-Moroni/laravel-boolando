@@ -19,27 +19,27 @@
               <ul>
                 <li>
                     <a href="">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-brands fa-square-facebook"></i>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-brands fa-pinterest"></i>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                        <i class="fa-brands fa-youtube"></i>
                     </a>
                 </li>
               </ul>

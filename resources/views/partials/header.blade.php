@@ -4,13 +4,13 @@
             <ul>
 
               <li>
-                <a href="">Uomo</a>
+                <a href="{{route('home')}}">Uomo</a>
               </li>
               <li>
-                <a href="">Donna</a>
+                <a href="{{route('woman')}}">Donna</a>
               </li>
               <li>
-                <a href="">Bambino</a>
+                <a href="{{route('children')}}">Bambino</a>
               </li>
 
             </ul>
